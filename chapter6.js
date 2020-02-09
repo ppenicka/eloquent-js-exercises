@@ -28,7 +28,7 @@ class Group {
     this.values.push(item);
   }
   delete (item) {
-    this.values.splice(this.values.indexOf(item));
+    this.values.splice(this.values.indexOf(item),1);
   }
   has (item) {
     return (this.values.indexOf(item) !== -1) ? true : false;
